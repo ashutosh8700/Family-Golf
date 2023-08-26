@@ -41,6 +41,7 @@ video{
     width: 100%;
     object-fit: cover;
     position: fixed;
+    z-index: -1;
 }
 
 #main{
@@ -53,11 +54,42 @@ video{
     width: 100%;
     /* very parent div will have position relative because due to which its parent div are relative */
     position: relative;
-    
+    /* flex means it makes the container flexible which can be arrange row or coloumn wise */
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    flex-direction: column;
+    text-align: center;
 }
 
+#page1 h1{
+    font-size: 140px;
+    font-weight: 800;
+    position: relative;
+}
+
+/* pseudo elements */
+
+#page1 h1::before{
+    content: "EAT. DRINK. PLAY";
+    position: absolute;
+    color: #000;
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke: 1px #95C11E ;
+}
+
+#page1 h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#page1 p{
+    font-size: 20px;
+    font-weight: 500;
+    width:  40%;
+
+}
 
