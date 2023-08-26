@@ -170,3 +170,37 @@ video{
         transform: translateX(-100%);
     }   
 }
+
+#about-us{
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+    z-index: 10;
+}
+
+#about-us img{
+    height: 250px;
+    width: 250px;
+   border-radius: 20px;
+   object-fit: cover;
+}
+
+#about-us-in{
+    width: 50%;
+    text-align: center;
+}
+
+#about-us-in h3{
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+#about-us-in p {
+    font-size: 20px;
+    line-height: 26px;
+}
