@@ -293,3 +293,38 @@ video{
     object-fit: cover;
     width: 20%;
 }
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* when ever we make position absolute we have to make parent position as relative */
+    position: relative;
+}
+
+/* direct paragrapgh in the page 3 */
+#page3>p{
+    font-size: 30px;
+    font-weight: 700;
+    width: 45%;
+    text-align: center;
+    line-height: 45px
+}
+
+#page3 img{
+    position: absolute;
+    height: 60px;
+}
+
+#page3 #colon1{
+    left: 15%;
+    top: 25%;
+}
+
+#page3 #colon2{
+    bottom: 30%;
+    right: 15%;
+}
